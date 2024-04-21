@@ -18,6 +18,7 @@ public class Person {
     @Email(message = "Email should be valid")
     private String email;
 
+    @Pattern(regexp = "[A-Z]\\w+, [A-Z]\\w+, \\d{6}", message = "Address should be in format: Country, City, 123456")
     private String address;
 
     public Person() {}
